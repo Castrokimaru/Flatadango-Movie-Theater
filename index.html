@@ -4,40 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flatadango Movie Theater</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <header class="bg-blue-800 text-white shadow-lg">
-        <div class="container mx-auto px-4 py-6">
-            <h1 class="text-3xl font-bold text-center">Flatadango Movie Theater</h1>
-        </div>
+<body>
+    <header>
+        <h1>Flatadango Movie Theater</h1>
     </header>
     
-    <main class="container mx-auto px-4 py-8">
-        <div class="flex flex-col lg:flex-row gap-8">
-            <div class="lg:w-1/4">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Now Showing</h2>
-                    <ul id="films" class="space-y-2">
-                    </ul>
-                </div>
-            </div>
+    <div class="container">
+        <div class="films-container">
+            <h2>Now Showing</h2>
+            <ul id="films">
             
-            <div class="lg:w-3/4">
-                <div id="movie-details" class="bg-white rounded-lg shadow-lg p-6">
-                    <div class="animate-pulse">
-                        <div class="h-64 bg-gray-200 rounded-lg mb-4"></div>
-                        <div class="h-6 bg-gray-200 rounded w-3/4 mb-2"></div>
-                        <div class="h-4 bg-gray-200 rounded w-1/2 mb-1"></div>
-                        <div class="h-4 bg-gray-200 rounded w-2/3 mb-1"></div>
-                        <div class="h-4 bg-gray-200 rounded w-5/6 mb-4"></div>
-                        <div class="h-10 bg-gray-200 rounded w-32"></div>
-                    </div>
-                </div>
-            </div>
+            </ul>
         </div>
-    </main>
+        
+        <div class="movie-details" id="movie-details">
+            <p>Loading movie details...</p>
+        </div>
+    </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
