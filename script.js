@@ -1,4 +1,4 @@
-const BASE_URL = 'https://json-server-vercel-8x7p.vercel.app/films';
+const BASE_URL = 'https://json-server-vercel-8x7p.vercel.app';
 
 let currentMovie = null;
 
